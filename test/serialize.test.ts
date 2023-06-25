@@ -32,8 +32,7 @@ describe("serialize", () => {
   });
 
   it("serial and parse", () => {
-    const str = stringify(new C());
-    console.log(str);
+    const str = stringify(new A());
     expect(JSON.parse(str)).toEqual({
       "__@@serial_cls": {
         "__@@serial_type": "A",
