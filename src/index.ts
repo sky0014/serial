@@ -1,1 +1,1 @@
-export * as serial from "./serial";
+export * as default from "./serial";
