@@ -1,0 +1,45 @@
+{
+  "name": "@sky0014/serial",
+  "version": "1.0.0",
+  "description": "A simple serialize library for js.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rimraf lib && rollup -c",
+    "test": "rimraf coverage && jest --coverage",
+    "pub": "npm run test && npm run build && npm publish --registry=https://registry.npmjs.org --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sky0014/serial.git"
+  },
+  "keywords": [
+    "serial",
+    "serialize"
+  ],
+  "author": "sky0014 <sky-wang@qq.com>",
+  "bugs": {
+    "url": "https://github.com/sky0014/serial/issues"
+  },
+  "homepage": "https://github.com/sky0014/serial/#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.19.1",
+    "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-typescript": "^8.3.2",
+    "@types/jest": "^29.0.2",
+    "jest": "^29.0.3",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.70.2",
+    "rollup-plugin-dts": "^4.2.1",
+    "rollup-plugin-node-externals": "^5.1.2",
+    "tslib": "^2.5.0",
+    "typescript": "^4.8.3"
+  },
+  "browserslist": [
+    "chrome 55",
+    "firefox 53"
+  ],
+  "files": [
+    "lib"
+  ]
+}
